@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bitácora Digital: ideas sobre tecnología, viajes y vida cotidiana.">
+  <title>Bitácora Digital | Blog</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header" id="inicio">
+    <nav class="navbar container" aria-label="Navegación principal">
+      <a class="brand" href="#inicio"><span class="brand-mark">B</span> Bitácora<span>Digital</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#inicio">Inicio</a>
+        <a href="#entradas">Entradas</a>
+        <a href="#sobre">Sobre el blog</a>
+      </div>
+    </nav>
+    <section class="hero container">
+      <div class="hero-copy">
+        <p class="eyebrow">IDEAS · EXPERIENCIAS · INSPIRACIÓN</p>
+        <h1>Un espacio para <span>descubrir</span> algo nuevo.</h1>
+        <p class="hero-text">Historias breves sobre tecnología, lugares por conocer y pequeños hábitos que hacen mejor cada día.</p>
+        <a class="button" href="#entradas">Explorar entradas <span aria-hidden="true">↘</span></a>
+      </div>
+      <div class="hero-art" role="img" aria-label="Ilustración decorativa de una libreta y una taza">
+        <div class="sun"></div><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="notebook"><div class="notebook-line"></div><div class="notebook-line"></div><div class="notebook-line short"></div><span>ideas<br>en marcha.</span></div>
+        <div class="mug"><div class="mug-handle"></div></div>
+        <span class="spark spark-one">✦</span><span class="spark spark-two">✳</span>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="posts-section container" id="entradas">
+      <div class="section-heading">
+        <div><p class="eyebrow">LECTURAS RECIENTES</p><h2>Las últimas entradas</h2></div>
+        <label class="search-box"><span class="sr-only">Buscar entradas</span><input id="searchInput" type="search" placeholder="Buscar una entrada…"></label>
+      </div>
+      <div class="post-grid" id="postGrid">
+        <article class="post-card" data-search="tecnología organización herramientas digitales productividad">
+          <a class="post-image image-tech" href="#entrada-tecnologia" aria-label="Leer entrada sobre tecnología">
+            <span class="image-label">TECNOLOGÍA</span><div class="tech-window"><span></span><span></span><span></span><div class="code-lines"></div></div>
+          </a>
+          <div class="post-content">
+            <p class="post-meta">12 de octubre de 2026 · 4 min de lectura</p>
+            <h3><a href="#entrada-tecnologia">Pequeñas herramientas digitales, grandes cambios</a></h3>
+            <p>Una selección de hábitos y recursos sencillos que ayudan a organizar las tareas y aprovechar mejor el tiempo.</p>
+            <a class="read-more" href="#entrada-tecnologia">Leer entrada <span>→</span></a>
+          </div>
+        </article>
+        <article class="post-card" data-search="viajes naturaleza aventura lugares explorar caminata">
+          <a class="post-image image-travel" href="#entrada-viajes" aria-label="Leer entrada sobre viajes">
+            <span class="image-label">VIAJES</span><div class="mountain mountain-back"></div><div class="mountain mountain-front"></div><div class="trail"></div><div class="tiny-sun"></div>
+          </a>
+          <div class="post-content">
+            <p class="post-meta">8 de octubre de 2026 · 3 min de lectura</p>
+            <h3><a href="#entrada-viajes">Viajar cerca también es descubrir</a></h3>
+            <p>No siempre hace falta ir lejos: una ruta nueva, un parque o un pueblo cercano pueden convertirse en una aventura.</p>
+            <a class="read-more" href="#entrada-viajes">Leer entrada <span>→</span></a>
+          </div>
+        </article>
+        <article class="post-card" data-search="bienestar rutina pausa lectura café hábitos descanso">
+          <a class="post-image image-wellness" href="#entrada-bienestar" aria-label="Leer entrada sobre bienestar">
+            <span class="image-label">BIENESTAR</span><div class="plant-pot"><div class="plant-stem"></div><i></i><b></b><em></em></div><div class="coffee-cup"><div class="coffee"></div></div><div class="book"></div>
+          </a>
+          <div class="post-content">
+            <p class="post-meta">2 de octubre de 2026 · 3 min de lectura</p>
+            <h3><a href="#entrada-bienestar">El valor de hacer una pausa</a></h3>
+            <p>Reservar unos minutos para respirar, leer o tomar algo con calma puede ayudarnos a recuperar el enfoque.</p>
+            <a class="read-more" href="#entrada-bienestar">Leer entrada <span>→</span></a>
+          </div>
+        </article>
+      </div>
+      <p class="empty-state" id="emptyState" hidden>No se encontraron entradas. Prueba con otra palabra.</p>
+    </section>
+
+    <section class="article-details">
+      <div class="container detail-layout">
+        <div class="detail-intro"><p class="eyebrow">MÁS DETALLES</p><h2>Ideas que puedes llevar a tu día a día</h2><p>Estas entradas reúnen consejos sencillos y propuestas para seguir aprendiendo, explorar el entorno y cuidar el equilibrio cotidiano.</p></div>
+        <div class="detail-list">
+          <article id="entrada-tecnologia"><span class="detail-number">01</span><div><h3>Pequeñas herramientas digitales, grandes cambios</h3><p>Empieza por una lista de prioridades, organiza tus archivos en carpetas claras y utiliza un calendario para recordar fechas importantes. Lo esencial no es tener muchas aplicaciones, sino elegir herramientas que realmente resuelvan una necesidad.</p></div></article>
+          <article id="entrada-viajes"><span class="detail-number">02</span><div><h3>Viajar cerca también es descubrir</h3><p>Planifica una salida a un sitio que todavía no conozcas. Consulta el clima, lleva agua y respeta las normas del lugar. Observar los detalles y conversar con las personas de la zona puede hacer especial incluso una excursión corta.</p></div></article>
+          <article id="entrada-bienestar"><span class="detail-number">03</span><div><h3>El valor de hacer una pausa</h3><p>Prueba a dejar el teléfono a un lado durante unos minutos, estirar el cuerpo o leer unas páginas. Las pausas breves no sustituyen el descanso necesario, pero pueden ayudarte a dividir tareas largas y volver a ellas con más atención.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section container" id="sobre">
+      <div class="about-icon">✎</div><div><p class="eyebrow">SOBRE EL BLOG</p><h2>Una bitácora en constante construcción.</h2><p>Bitácora Digital es un blog de práctica creado con HTML y CSS. Su propósito es compartir ideas de forma sencilla, visual y accesible.</p></div>
+      <a class="back-top" href="#inicio">Volver arriba ↑</a>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><a class="brand footer-brand" href="#inicio"><span class="brand-mark">B</span> Bitácora<span>Digital</span></a><p>Hecho con curiosidad y código · 2026</p></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
